@@ -1,4 +1,4 @@
-import * as productsController from './productsController';
+import productsController from './productsController';
 
 // Constants
 const ADD_TO_SHOPPING_CART = "ADD_TO_SHOPPING_CART";
@@ -29,8 +29,8 @@ export default function reducer(state=initialState, action) {
             newArray.splice(action.index, 1);
             return Object.assign({}, {shoppingCart: newArray});
             
-        defualt:
-            return state;
+        // defualt:
+        //     return state;
     }
 }
 
@@ -52,6 +52,6 @@ export function removeFromShoppingCart(productIndex) {
 export function getAllProducts(products) {
     return {
         type: GET_ALL_PRODUCTS,
-        payload: productsController.getAllProducts()
+        payload: productsController()
     }
 }

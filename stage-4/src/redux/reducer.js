@@ -7,10 +7,10 @@ const GET_ALL_PRODUCTS = "GET_ALL_PRODUCTS";
 const GET_ALL_PRODUCTS_PENDING = "GET_ALL_PRODUCTS_PENDING";
 const GET_ALL_PRODUCTS_FULFILLED = "GET_ALL_PRODUCTS_FULFILLED";
 
-let initialState = {
-    products: [],
-    shoppingCart: []
-}
+// let initialState = {
+//     products: [],
+//     shoppingCart: []
+// }
 
 // Reducer
 export default function reducer(state, action) {
